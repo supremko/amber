@@ -169,6 +169,7 @@ public class Config {
     public static String font = Utils.getpref("font", "SansSerif");
     public static int fontadd = Utils.getprefi("fontadd", 0);
     public static boolean proximityaggro = Utils.getprefb("proximityaggro", false);
+    public static boolean minimapsmooth = Utils.getprefb("minimapsmooth", false);
     public static boolean foodService = Utils.getprefb("foodService", false);
     public static boolean pf = false;
     public static String playerposfile;
@@ -304,7 +305,7 @@ public class Config {
         put("strawberrytree", new CheckListboxItem("Wood Strawberry"));
     }};
 
-    public final static HashMap<String, CheckListboxItem> icons = new HashMap<String, CheckListboxItem>(52) {{
+    public final static HashMap<String, CheckListboxItem> icons = new HashMap<String, CheckListboxItem>(55) {{
         put("dandelion", new CheckListboxItem("Dandelion"));
         put("chantrelle", new CheckListboxItem("Chantrelle"));
         put("blueberry", new CheckListboxItem("Blueberry"));
@@ -358,6 +359,9 @@ public class Config {
         put("duskfern", new CheckListboxItem("Dusk Fern"));
         put("sandflea", new CheckListboxItem("Sand Flea"));
         put("jellyfish", new CheckListboxItem("Jelly Fish"));
+        put("precioussnowflake", new CheckListboxItem("Precious Snowflake"));
+        put("coltsfoot", new CheckListboxItem("Coltsfoot"));
+        put("frogspawn", new CheckListboxItem("Frogspawn"));
     }};
 
     public final static HashMap<String, CheckListboxItem> flowermenus = new HashMap<String, CheckListboxItem>(19) {{
